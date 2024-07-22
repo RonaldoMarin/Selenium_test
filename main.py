@@ -36,4 +36,4 @@ if __name__ == "__main__":
     main = SeleniumTest()
     main.abrir()
     main.logar_no_suap()
-    main.navegar_ate_aba_boletim()
+    input()
