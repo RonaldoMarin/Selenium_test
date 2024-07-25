@@ -1,11 +1,15 @@
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
+import selenium
+from time import sleep
+import undetected_chromedriver as uc
 
-class Setup():
-    chrome_options = Options()
-    chrome_options.add_argument("--start-maximized")
+class SeleniumSetup:
 
-    # Inicializando o driver do Chrome
-    driver = webdriver.Chrome(options=chrome_options)
+    options = uc.ChromeOptions()
+    options.headless = False
+    options.add_argument("--disable-blink-features=AutomationControlled")
+    options.add_argument("--start-maximized")
 
-    
+    driver = uc.Chrome(options = options, version_main=126)
+
+
+
