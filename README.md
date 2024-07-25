@@ -13,5 +13,9 @@ py -m venv venv
 ```
 
 ``` bash
-pip install selenium
+pip install -r requirements.txt
+```
+
+``` bash
+py main.py
 ```
